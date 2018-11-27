@@ -1,0 +1,13 @@
+﻿@model IEnumerable<DONUTS.Models.Donut>
+
+<h1>DONUTS!!!1!1</h1>
+
+<br />
+
+<ul>
+    @*Display each of the donuts with links to their details*@
+    @foreach (dynamic o in Model)
+    {
+    <li><a href="/Home/Donut?id=@o.ID">@o.Name</a></li>
+    }
+</ul>

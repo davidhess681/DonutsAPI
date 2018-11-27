@@ -1,0 +1,14 @@
+﻿
+
+<h1>Donut Details:</h1>
+
+<h4>Name: @ViewBag.Name</h4>
+<h4>Calories: @ViewBag.Calories</h4>
+<h4>Extras:</h4>
+<ul>
+    @foreach (var e in ViewBag.Extras)
+    {
+        <li>@e</li>
+    }
+</ul>
+<img src="@ViewBag.Photo"/>
